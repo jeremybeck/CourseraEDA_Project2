@@ -34,7 +34,7 @@ require(ggplot2)
   balt_yearly_data <- crabcakecapitaloftheworld %>% group_by(year, type) %>% summarise(yearly_PM25 = sum(Emissions))
   
   # And we define our graphical output, and plot.
-  png(file="./plot3.png", height=480, width=1200, units='px')
+  png(file="./plot3.png", height=480, width=1000, units='px')
   
   # We use the facet_grid to break the plot apart, one for each source type. And we'll be a bit lazier here and add a trendline for each facet
   # Fun fact about ggplot2 - if you call within a function or script, you have to use print() to get it to render... 
